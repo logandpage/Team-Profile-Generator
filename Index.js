@@ -7,6 +7,7 @@ const Employee = require("./lib/Employee.js");
 const Engineer = require("./lib/Engineer.js");
 const Intern = require("./lib/Intern.js");
 const Manager = require("./lib/Manager.js");
+const generateHTML = require("./generateHTML")
 
 //Employees DATA
 const employees = [];
@@ -155,7 +156,7 @@ function completedRoster(employees){
     console.log(employees);
     const html = generateHTML(employees);
     console.log(html);
-    writeFileAsync("./output/employees.html", html, "utf-8");
+    // writeFileAsync("./output/employees.html", html, "utf-8");
 }
 
 function init(){
